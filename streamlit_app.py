@@ -9,9 +9,3 @@ uploaded_file = st.file_uploader('Choose a CSV file')
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
     st.dataframe(df)
-
-uploaded_file1 = st.file_uploader('Choose a CSV file')
- 
-if uploaded_file1:
-    df1 = pd.read_csv(uploaded_file1)
-    st.dataframe(df1)
