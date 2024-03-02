@@ -4,9 +4,8 @@ import numpy as np
 
 st.title('Dashboard for Shared Bike Riding Data Analysis')
 
-st.write(
-    """
-    # My first app
-    Hello, para calon praktisi data masa depan!
-    """
-)
+uploaded_file = st.file_uploader('Choose a CSV file')
+ 
+if uploaded_file:
+    df = pd.read_csv(uploaded_file)
+    st.dataframe(df)
