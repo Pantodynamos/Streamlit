@@ -14,8 +14,8 @@ if uploaded_file:
 
 bike_dataframe_day = pd.read_csv("day.csv")
 
-min_date = bike_dataframe_day["dteday"].min()
-max_date = bike_dataframe_day["dteday"].max()
+min_date = df["dteday"].min()
+max_date = df["dteday"].max()
 
 with st.sidebar:
 
