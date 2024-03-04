@@ -9,8 +9,10 @@ st.title('Dashboard for Shared Bike Riding Data Analysis')
 st.image("Cloaked_figure.png")
 
 df = pd.read_csv("day.csv")
+dfhour = pd.read_csv("hour.csv")
 
 st.dataframe(df)
+st.dataframe(dfhour)
 st.write("Dibawah adalah chart untuk perbandingan total pengguna per bulan")
 fig, ax = plt.subplots(figsize=(16, 8))
 ax.plot(
@@ -26,7 +28,7 @@ ax.tick_params(axis='x', labelsize=15)
 st.pyplot(fig)
 
 fig1, ax = plt.subplots(figsize=(20,5))
-sns.pointplot(data=bike_dataframe_hour, x='hr', y='cnt', hue='weekday', ax=ax)
+sns.pointplot(data=dfhour, x='hr', y='cnt', hue='weekday', ax=ax)
 ax.set(title='Count of bikes at weekdays and weekends')
 
 st.pyplot(fig1)
