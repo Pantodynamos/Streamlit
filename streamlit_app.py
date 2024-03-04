@@ -19,6 +19,7 @@ bike_dataframe_day = pd.read_csv("day.csv")
 bike_dataframe_day.head()
 
 st.dataframe("bike_dataframe_day")
+st.dataframe("day.csv")
 min_date = bike_dataframe_day["dteday"].min()
 max_date = bike_dataframe_day["dteday"].max()
 
