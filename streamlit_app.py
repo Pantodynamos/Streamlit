@@ -13,7 +13,9 @@ dfhour = pd.read_csv("hour.csv")
 
 st.dataframe(df)
 st.dataframe(dfhour)
+
 st.write("Dibawah adalah chart untuk perbandingan total pengguna per bulan")
+
 fig, ax = plt.subplots(figsize=(16, 8))
 ax.plot(
     df["mnth"],
@@ -27,6 +29,7 @@ ax.tick_params(axis='x', labelsize=15)
  
 st.pyplot(fig)
 
+st.write("Dibawah adalah chart perbandingan total pengguna per jam pada hari kerja dan hari libur")
 fig1, ax = plt.subplots(figsize=(20,5))
 sns.pointplot(data=dfhour, x='hr', y='cnt', hue='weekday', ax=ax)
 ax.set(title='Count of bikes at weekdays and weekends')
