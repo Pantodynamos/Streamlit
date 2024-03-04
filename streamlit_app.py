@@ -11,7 +11,7 @@ st.image("Cloaked_figure.png")
 df = pd.read_csv("day.csv")
 
 st.dataframe(df)
-st.write("Dibawah adalah chart untuk perbandingan total pengguna per bulan"
+st.write("Dibawah adalah chart untuk perbandingan total pengguna per bulan")
 fig, ax = plt.subplots(figsize=(16, 8))
 ax.plot(
     df["mnth"],
