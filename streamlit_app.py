@@ -28,7 +28,7 @@ ax.plot(
 )
 ax.tick_params(axis='y', labelsize=20)
 ax.tick_params(axis='x', labelsize=15)
- 
+ax.set(title='User count per month') 
 st.pyplot(fig)
 
 st.write("Dibawah adalah chart perbandingan total pengguna per jam pada hari kerja dan hari libur")
