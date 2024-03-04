@@ -13,7 +13,7 @@ df = pd.read_csv("day.csv")
 st.dataframe(df)
 
 plt.figure(figsize=(10, 6))
-plt.plot(bike_dataframe_day['mnth'], bike_dataframe_day['cnt'], marker='o', linestyle='-')
+plt.plot(df['mnth'], df['cnt'], marker='o', linestyle='-')
 plt.title('Total User Count and Month')
 plt.xlabel('Month')
 plt.ylabel('Total User Count')
