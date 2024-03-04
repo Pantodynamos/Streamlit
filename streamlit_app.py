@@ -39,5 +39,5 @@ ax.set(title='Count of bikes at weekdays and weekends')
 
 st.pyplot(fig1)
 
-st.Header("Kesimpulan")
+st.header("Kesimpulan")
 st.write("Dari chart pertama terlihat bahwa adanya peningkatan pengguna bike sharing pada bulan 5-9 yang berarti lebih banyak pengguna bike sharing pada musim summer dan fall,sedangkan pada musim winter dan spring terjadi penurunan. Lalu pada chart kedua terlihat peningkatan signifikan pada jam berangkat dan pulang kerja, sedangkan pada hari libur pengguna bike sharing meningkat setelah jam 10.")
