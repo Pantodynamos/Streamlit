@@ -6,7 +6,7 @@ import seaborn as sns
 
 st.title('Dashboard for Shared Bike Riding Data Analysis')
 
-st.image("Cloaked_figure.png")
+st.image("bike_sharing.jpg")
 
 df = pd.read_csv("day.csv")
 dfhour = pd.read_csv("hour.csv")
