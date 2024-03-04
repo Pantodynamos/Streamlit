@@ -24,3 +24,9 @@ ax.tick_params(axis='y', labelsize=20)
 ax.tick_params(axis='x', labelsize=15)
  
 st.pyplot(fig)
+
+fig1, ax = plt.subplots(figsize=(20,5))
+sns.pointplot(data=bike_dataframe_hour, x='hr', y='cnt', hue='weekday', ax=ax)
+ax.set(title='Count of bikes at weekdays and weekends')
+
+st.pyplot(fig1)
