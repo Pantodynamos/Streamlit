@@ -14,7 +14,7 @@ if uploaded_file:
 
 st.image("Cloaked_figure.png")
 
-bike_dataframe_day = pd.read_csv("day.csv")
+bike_dataframe_day = pd.read_csv("./day.csv")
 
 bike_dataframe_day.head()
 
