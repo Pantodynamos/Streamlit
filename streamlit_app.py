@@ -14,8 +14,8 @@ st.dataframe(df)
 
 fig, ax = plt.subplots(figsize=(16, 8))
 ax.plot(
-    daily_orders_df["mnth"],
-    daily_orders_df["cnt"],
+    df["mnth"],
+    df["cnt"],
     marker='o', 
     linewidth=2,
     color="#90CAF9"
