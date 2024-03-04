@@ -10,4 +10,13 @@ st.image("Cloaked_figure.png")
 
 df = pd.read_csv("day.csv")
 
-st.write(df)
+st.dataframe(df)
+
+plt.figure(figsize=(10, 6))
+plt.plot(bike_dataframe_day['mnth'], bike_dataframe_day['cnt'], marker='o', linestyle='-')
+plt.title('Total User Count and Month')
+plt.xlabel('Month')
+plt.ylabel('Total User Count')
+plt.xticks(range(1, 13), ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
+plt.grid(True)
+plt.show()
