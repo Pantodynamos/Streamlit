@@ -12,11 +12,15 @@ df = pd.read_csv("day.csv")
 
 st.dataframe(df)
 
-plt.figure(figsize=(10, 6))
-plt.plot(df['mnth'], df['cnt'], marker='o', linestyle='-')
-plt.title('Total User Count and Month')
-plt.xlabel('Month')
-plt.ylabel('Total User Count')
-plt.xticks(range(1, 13), ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
-plt.grid(True)
-plt.show()
+fig, ax = plt.subplots(figsize=(16, 8))
+ax.plot(
+    daily_orders_df["mnth"],
+    daily_orders_df["cnt"],
+    marker='o', 
+    linewidth=2,
+    color="#90CAF9"
+)
+ax.tick_params(axis='y', labelsize=20)
+ax.tick_params(axis='x', labelsize=15)
+ 
+st.pyplot(fig)
